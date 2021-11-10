@@ -1,0 +1,40 @@
+Q6:
+    For testDummySet1, the tree size was 3 and the classification rate was 1.0. The classification rate was probably this
+    high because there is an attribute among the 20 examples that would always lead to the correct answer. In the examples
+    for DummySet1, it turned out to be attribute 5: a value of 0 would lead to classification of 1 and value of 1 would lead
+    to 0. This would also explain why the tree size was so low.
+
+    For testDummySet2, the tree size was 11 and the classification rate was .65. The classification rate was lower than it
+    was for testDummySet1 because there was no magic attribute that would instantly classify the data. There probably aren't
+    enough examples for the decision tree since the classification rate is very low. With more examples, the tree could learn
+    to split at a better attribute which would increase the classification rate and decrease the size of the tree.
+
+    For testConnect4, the tree size was 41521 and the classification rate average was .757200. The size of the tree compared
+    to the amount of examples was a lot higher than it was any of the other data sets. This could be because there aren't any
+    good attributes to split on.
+
+    For testCar, the tree size was 408 and the classification rate average was .944500. This classification rate was by far
+    the second highest out of all the data sets and it had a relatively small tree size compared to DummySet2 and Connect4.
+    This could be because there are some really good, but not perfect attributes to split on.
+
+Q7:
+    For the cars data set, it could be used in something that gives recommended items based on user preferences such as
+    in YouTube and Amazon's recommended list. For YouTube, the data set could contain the type of video, the length, the
+    maker, and other information that could be used to identify potential videos that the user would want to watch. By
+    being more active on YouTube and watching more videos, it would give the decision tree more examples to choose from
+    and be a better predictor of the user's taste in videos.
+
+    For the connect4 data set, it could be used in a similar way as a heuristic function. At any position of the board,
+    the decision tree could return the likelihood of winning after a certain move based on the position of the board
+    after that move and then use that to return the best possible move. It would choose moves that are most likely to
+    lead to a leaf node with the value of win or draw than a lose.
+
+Q8:
+    I used the nursery data set from the UCI ML Repository. The tree size was 1183 with 12960 examples, and the classification
+    rate average was .988250. This classification was extremely high compared to the test data sets and some of the runs
+    had an average of 1.0. This probably means that similar to the car and DummySet1 data sets, there is one attribute
+    that splits the data extremely well and so it gives a very accurate decision tree. This data set was initially used
+    to screen applicants for a nursery school. This data set could do something similar by instead of a school determining
+    which applicants to accept, a student could use it to determine which school to attend. The data set could have info
+    such as tuition cost, out of state, difficulty, etc. A decision tree would be a very good model upon which to select
+    which school to go to.
